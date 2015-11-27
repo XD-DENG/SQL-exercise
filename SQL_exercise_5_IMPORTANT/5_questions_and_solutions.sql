@@ -1,0 +1,114 @@
+-- https://en.wikibooks.org/wiki/SQL_Exercises/Pieces_and_providers
+
+show tables;
+
+select * from Pieces;
+select * from Providers;
+select * from provides; 
+
+
+-- Select the name of all the pieces. 
+select Name from Pieces;
+-- 
+-- 
+-- Select all the providers' data. 
+select * from providers;
+-- 
+-- 
+-- Obtain the average price of each piece (show only the piece code and the average price).
+select piece, avg(price) 
+from Provides 
+group by piece;
+-- 
+-- 
+-- Obtain the names of all providers who supply piece 1.
+select Name 
+from Providers
+where Code in (
+select  Provider from provides where Piece = 1
+); 
+
+select Providers.Name 
+from Providers join Provides
+on Providers.Code = Provides.Provider
+where Provides.Piece = 1;
+
+/* Without subquery */
+ SELECT Providers.Name
+   FROM Providers INNER JOIN Provides
+          ON Providers.Code = Provides.Provider
+             AND Provides.Piece = 1;
+             
+/* With subquery */
+ SELECT Name
+   FROM Providers
+  WHERE Code IN
+   (SELECT Provider FROM Provides WHERE Piece = 1);
+
+-- 
+-- Select the name of pieces provided by provider with code "HAL".
+select Name from Pieces
+where Code in (
+select Piece from Provides where Provider = 'HAL'
+);
+
+select Pieces.Name
+from Pieces join Provides
+on (Pieces.code = Provides.Piece)
+where Provides.Provider = 'HAL';
+
+/* With EXISTS subquery */   
+-- Interesting clause
+SELECT Name
+  FROM Pieces
+  WHERE EXISTS
+  (
+    SELECT * FROM Provides
+      WHERE Provider = 'HAL'
+        AND Piece = Pieces.Code
+  );
+
+-- ---------------------------------------------
+-- !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+-- Intereting and important one.
+-- For each piece, find the most expensive offering of that piece and include the piece name, provider name, and price 
+-- (note that there could be two providers who supply the same piece at the most expensive price).
+
+-- Wrong solution given by XD-DENG. 
+select a.name, a.code, b.price, c.Name
+from Pieces a join Provides b
+on a.Code = b.Piece
+join Providers c
+on b.provider = c.Code
+group by a.code;
+-- this is wrong since when I group by a.code, SQL will automatically select the first c.Name in each group to return,
+-- which is not what we expected.
+
+-- CORRECT SOLUTION
+SELECT Pieces.Name, Providers.Name, Price
+  FROM Pieces INNER JOIN Provides ON Pieces.Code = Piece
+              INNER JOIN Providers ON Providers.Code = Provider
+  WHERE Price =
+  (
+    SELECT MAX(Price) FROM Provides
+    WHERE Piece = Pieces.Code
+  );
+-- This is worthwhile to look into again
+-- --------------------------------------------------------------
+ 
+-- Add an entry to the database to indicate that "Skellington Supplies" (code "TNBC") will provide sprockets (code "1") for 7 cents each.
+insert into Provides(Piece, Provider, Price)
+values (1, 'TNBC', 7);
+
+-- Increase all prices by one cent.
+update Provides
+set Price = Price + 1;
+
+-- Update the database to reflect that "Susan Calvin Corp." (code "RBT") will not supply bolts (code 4).
+delete from Provides where provider = 'RBT' AND Piece = 4;
+
+
+-- Update the database to reflect that "Susan Calvin Corp." (code "RBT") will not supply any pieces 
+-- (the provider should still remain in the database).
+delete from provides
+where Provider = 'RBT';
