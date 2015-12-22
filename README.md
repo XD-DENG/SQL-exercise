@@ -6,6 +6,8 @@ The schemas and questions are
 
 [1] from Wikibook **SQL Exercises** [https://en.wikibooks.org/wiki/SQL_Exercises]. Solutions are from both this Wikibook and me (exercise 1-8).
 
+or
+
 [2] given by me using some practical examples I encountered (exercise 9).
 
 ## Repository Structure
