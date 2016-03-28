@@ -1,17 +1,38 @@
 -- 9.1 give the total number of recordings in this table
-select count(*) from cran_logs_2015_01_01;
+SELECT 
+    COUNT(*)
+FROM
+    cran_logs_2015_01_01;
 
 -- 9.2 the number of packages listed in this table?
-select count(distinct package) from cran_logs_2015_01_01;
+SELECT 
+    COUNT(DISTINCT package)
+FROM
+    cran_logs_2015_01_01;
 
 -- 9.3 How many times the package "Rcpp" was downloaded?
-select count(*) from cran_logs_2015_01_01 where package = "Rcpp";
+SELECT 
+    COUNT(*)
+FROM
+    cran_logs_2015_01_01
+WHERE
+    package = 'Rcpp';
 
 -- 9.4 How many recordings are from China ("CN")?
-select count(*) from cran_logs_2015_01_01 where country = "CN";
+SELECT 
+    COUNT(*)
+FROM
+    cran_logs_2015_01_01
+WHERE
+    country = 'CN';
 
 -- 9.5 Give the package name and how many times they're downloaded. Order by the 2nd column descently.
-select package, count(*) from cran_logs_2015_01_01 group by package order by 2 desc;
+SELECT 
+    package, COUNT(*)
+FROM
+    cran_logs_2015_01_01
+GROUP BY package
+ORDER BY 2 DESC;
 
 -- 9.6 Give the package ranking (based on how many times it was downloaded) during 9AM to 11AM
 select a.package, count(*) 
@@ -24,3 +45,21 @@ from
 as a
 group by a.package 
 order by 2 desc;
+
+-- 9.7 How many recordings are from China ("CN") or Japan("JP") or Singapore ("SG")?
+--    Select based on a given list.
+SELECT 
+    COUNT(*)
+FROM
+    cran_logs_2015_01_01
+WHERE
+    country = 'CN' 
+    OR country = 'JP'
+	OR country = 'SG';
+    
+SELECT 
+    COUNT(*)
+FROM
+    cran_logs_2015_01_01
+WHERE
+    country IN ('CN' , 'JP', 'SG');
