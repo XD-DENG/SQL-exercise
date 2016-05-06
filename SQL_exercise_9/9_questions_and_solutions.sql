@@ -63,3 +63,23 @@ FROM
     cran_logs_2015_01_01
 WHERE
     country IN ('CN' , 'JP', 'SG');
+
+
+-- 9.8 Print the countries whose downloaded are more than the downloads from China ("CN")
+
+SELECT 
+    TEMP.country
+FROM
+    (SELECT 
+        country, COUNT(*) AS downloads
+    FROM
+        cran_logs_2015_01_01
+    GROUP BY country) AS TEMP
+WHERE
+    TEMP.downloads > (SELECT 
+            COUNT(*)
+        FROM
+            cran_logs_2015_01_01
+        WHERE
+            country = 'CN');
+
