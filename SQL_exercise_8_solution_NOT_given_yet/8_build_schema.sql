@@ -11,7 +11,7 @@ CREATE TABLE Physician (
 
 DROP TABLE IF EXISTS Department;
 CREATE TABLE Department (
-  DepartmentID INTEGER NULL,
+  DepartmentID INTEGER NOT NULL,
   Name VARCHAR(30) NOT NULL,
   Head INTEGER NOT NULL,
   CONSTRAINT pk_Department PRIMARY KEY(DepartmentID),
