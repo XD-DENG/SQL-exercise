@@ -121,4 +121,15 @@ where value < 100;
 
 -- 3.15
 -- Remove all boxes from saturated warehouses.
-
+delete from boxes
+where warehouse in
+(
+SELECT Code
+   FROM Warehouses
+   WHERE Capacity <
+   (
+     SELECT COUNT(*)
+       FROM Boxes
+       WHERE Warehouse = Warehouses.Code
+   )
+);
