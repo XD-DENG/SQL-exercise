@@ -82,10 +82,6 @@ SELECT name,price
   ORDER BY price ASC
   LIMIT 1;
 
-SELECT Name, Price
-   FROM Products
-   WHERE Price = (SELECT MIN(Price) FROM Products);
-
 -- 1.16 Select the name of each manufacturer along with the name and price of its most expensive product.
 select a.Name, max(a.price), b.Name
 from Manufacturers b join Products a 
