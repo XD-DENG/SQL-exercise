@@ -157,7 +157,7 @@ WHERE e.Department = (
 -- 2.16
 -- Add a new department called "Quality Assurance", with a budget of $40,000 and departmental code 11. 
 -- Add an employee called "Mary Moore" in that department, with SSN 847-21-9811.
-insert into departments values(11, 'Quality Assurnce', 40000);
+insert into departments values(11, 'Quality Assurance', 40000);
 insert into employees values(847219811, 'Mary', 'Moore', 11);
 
 
