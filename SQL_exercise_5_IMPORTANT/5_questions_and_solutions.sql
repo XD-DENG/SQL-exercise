@@ -79,7 +79,7 @@ SELECT Name
 -- For each piece, find the most expensive offering of that piece and include the piece name, provider name, and price 
 -- (note that there could be two providers who supply the same piece at the most expensive price).
 
--- Wrong solution given by XD-DENG. 
+-- WRONG solution given by XD-DENG. 
 select a.name, a.code, b.price, c.Name
 from Pieces a join Provides b
 on a.Code = b.Piece
@@ -104,21 +104,20 @@ SELECT Pieces.Name, Providers.Name, Price
 
 -- 5.7
 -- Add an entry to the database to indicate that "Skellington Supplies" (code "TNBC") will provide sprockets (code "1") for 7 cents each.
-insert into Provides(Piece, Provider, Price)
-values (1, 'TNBC', 7);
+INSERT INTO Provides(Piece, Provider, Price) VALUES (1, 'TNBC', 7);
 
 -- 5.8
 -- Increase all prices by one cent.
-update Provides
-set Price = Price + 1;
+UPDATE Provides
+SET Price = Price + 1;
 
 -- 5.9
 -- Update the database to reflect that "Susan Calvin Corp." (code "RBT") will not supply bolts (code 4).
-delete from Provides where provider = 'RBT' AND Piece = 4;
+DELETE FROM Provides WHERE provider = 'RBT' AND Piece = 4;
 
 
 -- 5.10
 -- Update the database to reflect that "Susan Calvin Corp." (code "RBT") will not supply any pieces 
 -- (the provider should still remain in the database).
-delete from provides
-where Provider = 'RBT';
+DELETE FROM provides
+WHERE Provider = 'RBT';
