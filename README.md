@@ -4,7 +4,7 @@ Schemas, Questions &amp; Solutions for SQL Exercising
 ## Introduction
 The schemas and questions are 
 
-[1] from Wikibook **SQL Exercises** [https://en.wikibooks.org/wiki/SQL_Exercises]. Solutions are from both this Wikibook and me (exercise 1-8).
+[1] from Wikibook **SQL Exercises** [https://en.wikibooks.org/wiki/SQL_Exercises]. Solutions are from both this Wikibook and me (exercise 1-8). I also added some questions by myself.
 
 or
 
