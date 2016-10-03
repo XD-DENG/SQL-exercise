@@ -18,9 +18,18 @@ CREATE TABLE Provides (
  PRIMARY KEY(Piece, Provider) 
  );
  
+-- alternative one for SQLite
+  /* 
+ CREATE TABLE Provides (
+ Piece INTEGER,
+ Provider VARCHAR(40),  
+ Price INTEGER NOT NULL,
+ PRIMARY KEY(Piece, Provider) 
+ );
+ */
  
  
- INSERT INTO Providers(Code, Name) VALUES('HAL','Clarke Enterprises');
+INSERT INTO Providers(Code, Name) VALUES('HAL','Clarke Enterprises');
 INSERT INTO Providers(Code, Name) VALUES('RBT','Susan Calvin Corp.');
 INSERT INTO Providers(Code, Name) VALUES('TNBC','Skellington Supplies');
 

@@ -53,7 +53,6 @@ group by warehouse;
 
 
 --3.9
--- !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
 -- Select the codes of all warehouses that are saturated (a warehouse is saturated if the number of boxes in it is larger than the warehouse's capacity).
 select Code
 from warehouses join (select warehouse temp_a, count(*) temp_b from boxes group by warehouse) temp
@@ -99,13 +98,12 @@ where warehouses.location = 'Chicago';
 
 --3.11
 -- Create a new warehouse in New York with a capacity for 3 boxes.
-insert into Warehouses (Location, capacity) values ('New fdaYork', 9);
+INSERT INTO Warehouses VALUES (6, 'New York', 3);
 
 
 --3.12
 -- Create a new box, with code "H5RT", containing "Papers" with a value of $200, and located in warehouse 2.
-INSERT INTO Boxes
-   VALUES('H5RT', 'Papers', 200, 2);
+INSERT INTO Boxes VALUES('H5RT', 'Papers', 200, 2);
 
 
 --3.13
@@ -121,4 +119,15 @@ where value < 100;
 
 -- 3.15
 -- Remove all boxes from saturated warehouses.
-
+delete from boxes
+where warehouse in
+(
+SELECT Code
+   FROM Warehouses
+   WHERE Capacity <
+   (
+     SELECT COUNT(*)
+       FROM Boxes
+       WHERE Warehouse = Warehouses.Code
+   )
+);
