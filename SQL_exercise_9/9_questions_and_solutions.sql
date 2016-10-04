@@ -142,3 +142,4 @@ GROUP BY SUBSTR(r_os, 1, 5);
 -- Here we use INT*1.0 to conver an integer to float so that we can compute compute the percentage (1/5 can be 0.2 instead of 0)
 -- || is an alternative of CONCAT() in SQLite.
 -- SUBSTR(field, start_position, length) is used to get a part of a character string.
+-- [] can help use spaces in the aliases.
