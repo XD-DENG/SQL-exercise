@@ -95,3 +95,18 @@ FROM
 SELECT DISTINCT package as packages
 	FROM cran_logs_2015_01_01
 ) temp;
+
+
+-- 9.10 Get the package whose downloading count ranks 2nd (print package name and it's download count).
+
+SELECT temp.a package, temp.b count
+FROM
+(
+SELECT package a, count(*) b
+	FROM cran_logs_2015_01_01
+	GROUP BY package
+	ORDER BY b DESC
+	LIMIT 2
+) temp
+ORDER BY temp.b ASC
+LIMIT 1;
