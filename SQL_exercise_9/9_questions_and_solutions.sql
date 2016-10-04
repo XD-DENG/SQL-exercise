@@ -94,4 +94,4 @@ FROM
 (
 SELECT DISTINCT package as packages
 	FROM cran_logs_2015_01_01
-);
+) temp;
