@@ -110,3 +110,22 @@ SELECT package a, count(*) b
 ) temp
 ORDER BY temp.b ASC
 LIMIT 1;
+
+
+-- 9.11 Print the name of the package whose download count is bigger than 1000.
+
+-- Solution 1 (without sub-query)
+SELECT package
+FROM cran_logs_2015_01_01
+GROUP BY package
+HAVING count(*) > 1000;
+
+-- Solution 2 (with sub-query)
+SELECT temp.package
+FROM
+(
+SELECT package, COUNT(*) as count
+	FROM cran_logs_2015_01_01
+	GROUP BY package
+) AS temp
+WHERE temp.count > 1000;
