@@ -124,8 +124,21 @@ HAVING count(*) > 1000;
 SELECT temp.package
 FROM
 (
-SELECT package, COUNT(*) as count
+SELECT package, COUNT(*) AS count
 	FROM cran_logs_2015_01_01
 	GROUP BY package
 ) AS temp
 WHERE temp.count > 1000;
+
+
+-- 9.12 The field "r_os" is the operating system of the users.
+-- 	Here we would like to know what main system we have (ignore version number), the relevant counts, and the proportion (in percentage).
+
+SELECT SUBSTR(r_os, 1, 5) AS OS, 
+	COUNT(*) AS [Download Count], 
+	SUBSTR(COUNT(*)/((SELECT COUNT(*) FROM cran)*1.0)*100, 1, 4) || "%" AS PROPORTION
+FROM cran_logs_2015_01_01
+GROUP BY SUBSTR(r_os, 1, 5);
+-- Here we use INT*1.0 to conver an integer to float so that we can compute compute the percentage (1/5 can be 0.2 instead of 0)
+-- || is an alternative of CONCAT() in SQLite.
+-- SUBSTR(field, start_position, length) is used to get a part of a character string.
