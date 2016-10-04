@@ -83,3 +83,15 @@ WHERE
         WHERE
             country = 'CN');
 
+-- 9.9 Print the average length of the package name of all the UNIQUE packages
+
+-- Wrong Solution (missed "UNIQUE")
+SELECT AVG(LENGTH(package)) from cran_logs_2015_01_01;
+
+-- Correct Solution
+SELECT AVG(LENGTH(temp.packages)) 
+FROM 
+(
+SELECT DISTINCT package as packages
+	FROM cran_logs_2015_01_01
+);
