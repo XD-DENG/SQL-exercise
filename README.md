@@ -8,7 +8,7 @@ The schemas and questions are
 
 or
 
-[2] given by me using some practical examples I encountered (exercise 9).
+[2] given by me using some practical examples I encountered (exercise 9-10).
 
 ## Repository Structure
 The repo structure is like below:
