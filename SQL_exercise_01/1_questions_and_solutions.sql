@@ -86,7 +86,7 @@ SELECT name,price
 select a.Name, max(a.price), b.Name
 from Manufacturers b join Products a 
 on a.Manufacturer = b.code
-group by b.name;
+group by b.name, a.Name;
 
 
 SELECT Products.Name, MAX(Price), Manufacturers.Name
