@@ -15,7 +15,7 @@ CREATE TABLE Employees (
   LastName varchar(255) NOT NULL ,
   Department INTEGER NOT NULL , 
   foreign key (department) references Departments(Code) 
-) ENGINE=INNODB;
+);
 
 INSERT INTO Departments(Code,Name,Budget) VALUES(14,'IT',65000);
 INSERT INTO Departments(Code,Name,Budget) VALUES(37,'Accounting',15000);
