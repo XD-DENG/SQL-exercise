@@ -131,3 +131,31 @@ SELECT Code
        WHERE Warehouse = Warehouses.Code
    )
 );
+
+-- 3.16
+-- Add Index for column "Warehouse" in table "boxes"
+-- !!!NOTE!!!: index should NOT be used on small tables in practice
+CREATE INDEX INDEX_WAREHOUSE ON Boxes (warehouse);
+
+-- 3.17
+-- Print all the existing indexes
+-- !!!NOTE!!!: index should NOT be used on small tables in practice
+
+-- MySQL
+SHOW INDEX FROM Boxes FROM mydb;
+SHOW INDEX FROM mydb.Boxes;
+
+-- SQLite
+.indexes Boxes
+-- OR
+SELECT * FROM SQLITE_MASTER WHERE type = "index";
+
+-- Oracle
+select INDEX_NAME, TABLE_NAME, TABLE_OWNER 
+from SYS.ALL_INDEXES 
+order by TABLE_OWNER, TABLE_NAME, INDEX_NAME
+
+-- 3.18
+-- Remove (drop) the index you added just
+-- !!!NOTE!!!: index should NOT be used on small tables in practice
+DROP INDEX INDEX_WAREHOUSE;
