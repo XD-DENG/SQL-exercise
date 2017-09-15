@@ -8,7 +8,7 @@ CREATE TABLE Warehouses (
    PRIMARY KEY (Code)
  );
 CREATE TABLE Boxes (
-    Code VARCHAR(255) NOT NULL,
+    Code CHAR(4) NOT NULL,
     Contents VARCHAR(255) NOT NULL ,
     Value REAL NOT NULL ,
     Warehouse INTEGER NOT NULL,
