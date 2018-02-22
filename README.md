@@ -25,5 +25,20 @@ SQL-exercise
 
 ```
 
+## Setup
+To setup database for practicing, enter the exercise folder (e.g., `exercise_01`) which you want to practice and start SQLite: 
+
+```commandline
+cd SQL_exercise_01
+sqlite3
+```
+
+Build tables using SQL script provided with `.read` dot-command in sqlite shell:
+```commandline
+.read 1_build_schema.sql
+```
+
+Start practicing.
+
 ## License
 Please note this repostory is under the Creative Commons Attribution-ShareAlike License[https://creativecommons.org/licenses/by-sa/3.0/].
