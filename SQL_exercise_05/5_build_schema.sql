@@ -1,5 +1,8 @@
 -- https://en.wikibooks.org/wiki/SQL_Exercises/Pieces_and_providers
 
+CREATE DATABASE sql_exercises_5;
+USE sql_exercises_5;
+
 CREATE TABLE Pieces (
  Code INTEGER PRIMARY KEY NOT NULL,
  Name TEXT NOT NULL

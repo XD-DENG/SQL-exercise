@@ -1,5 +1,8 @@
 -- https://en.wikibooks.org/wiki/SQL_Exercises/The_Hospital
 
+CREATE DATABASE sql_exercises_8;
+USE sql_exercises_8;
+
 DROP TABLE IF EXISTS Physician;
 CREATE TABLE Physician (
   EmployeeID INTEGER NOT NULL,

@@ -1,6 +1,9 @@
 -- The Warehouse
 -- lINK: https://en.wikibooks.org/wiki/SQL_Exercises/The_warehouse
 
+CREATE DATABASE sql_exercises_3;
+USE sql_exercises_3;
+
 CREATE TABLE Warehouses (
    Code INTEGER NOT NULL,
    Location VARCHAR(255) NOT NULL ,
