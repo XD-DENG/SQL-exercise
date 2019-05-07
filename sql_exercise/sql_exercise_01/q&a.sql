@@ -1,8 +1,16 @@
 # 总结
-# where 后的条件匹配:
+# 1、where 后的条件匹配:
 # >=大于等于,=等于,
 # between and 代表[]
-# order by 后面用 ,逗号分割
+# 2、order by 后面用 ,逗号分割
+# 3、表的链接查询，通过外键链接a.Manufacturer=b.Code，通过left，right,inner join来限定链接结果。
+# 4、group by的条件筛选是having而不是where
+# 5、在where条件中使用min()提示invalid use of group function。那么组函数使用有什么约束呢？
+# 6、查询最大或最小 a)子查询；b)排序后，限制查询结果数为1
+# 7、from后面多个表相当于inner join。原先的on由where代替
+# 8、 on 后面多个条件用 and 链接
+# 9、查询语句表是在from后面，insert，update ,delete 表都是首当其冲
+# 10、update是一行行更新的。也能通过order by来指定更新的顺序==update tableName set balance = 'value' order by create_time;
 -- 1.1 Select the names of all the products in the store.
 select name from sql_exercise.Products;
 -- 1.2 Select the names and the prices of all the products in the store.
@@ -22,14 +30,58 @@ select count(*) from sql_exercise.Products where sql_exercise.Products.Price>=18
 -- 1.9 Select the name and price of all products with a price larger than or equal to $180, and sort first by price (in descending order), and then by name (in ascending order).
 select sql_exercise.Products.Name,sql_exercise.Products.Price from sql_exercise.Products where sql_exercise.Products.Price>=180 order by sql_exercise.Products.Price desc  ,sql_exercise.Products.Name asc ;
 -- 1.10 Select all the data from the products, including all the data for each product's manufacturer.
-select * from sql_exercise.Products
+select a.*,b.* from sql_exercise.Products a left join sql_exercise.Manufacturers b on a.Manufacturer=b.Code;#外键用来链接表，a.Manufacturer=b.Code这个就是具体的链接脚本。之于链接结果通过left，right，或inner join来限定
 -- 1.11 Select the product name, price, and manufacturer name of all the products.
--- 1.12 Select the average price of each manufacturer's products, showing only the manufacturer's code.
+select a.name,a.price,b.name from sql_exercise.Products a left join sql_exercise.Manufacturers b on a.Manufacturer = b.Code;
+-- 1.12 Select the average price of each manufacturer's products, showing only the manufacturer's code.  ***用到了group by和聚合函数
+select b.code,avg(a.Price) from sql_exercise.Products a left join sql_exercise.Manufacturers b on a.Manufacturer=b.Code group by b.code;
 -- 1.13 Select the average price of each manufacturer's products, showing the manufacturer's name.
+select b.Name,avg(a.Price) from sql_exercise.Products a left join sql_exercise.Manufacturers b on a.Manufacturer=b.Code group by b.code;
 -- 1.14 Select the names of manufacturer whose products have an average price larger than or equal to $150.
--- 1.15 Select the name and price of the cheapest product.
--- 1.16 Select the name of each manufacturer along with the name and price of its most expensive product.
+select b.Name ,avg(a.Price) from sql_exercise.Products  a   join sql_exercise.Manufacturers b on a.Manufacturer=b.Code group by b.Code having avg(a.Price)>=150;#这是正确答案用join而不是我用left join
+-- 1.15 Select the name and price of the cheapest product.#要用子查询
+# 子查询
+select sql_exercise.Products.Name,sql_exercise.Products.Price from sql_exercise.Products where Price=(select min(sql_exercise.Products.Price) from sql_exercise.Products)
+# 升序后， 限制查询条数为1
+select sql_exercise.Products.Name,sql_exercise.Products.Price from sql_exercise.Products order by Price limit 1;#sqlserver top 1
+-- 1.16 ***** Select the name of each manufacturer along with the name and price of its most expensive product.
+
+#我觉得我的解法更好
+#1、找到所有工厂最贵的产品集合
+# 2、在所有产品里选出价格在最贵产品集合里的产品
+# 3、通过表链接，增加显示产品工厂的厂家名称
+# 其实关键在第二步就差不多解决了
+select b.Name as manufacturerName,a.Name as productName,a.Price from
+(select * from sql_exercise.Products where Price in (select max(Price) from sql_exercise.Products group by Manufacturer) ) a join sql_exercise.Manufacturers b on a.Manufacturer=b.Code;
+
+#答案
+select max_price_mapping.name as manu_name, max_price_mapping.price, products_with_manu_name.name as product_name
+from
+    (SELECT sql_exercise.Manufacturers.Name, MAX(Price) price
+     FROM sql_exercise.Products, sql_exercise.Manufacturers
+     WHERE Manufacturer = Manufacturers.Code
+     GROUP BY Manufacturers.Name)-- 表链接 查出各个工厂的最贵产品 以及工厂名用于下一步链接
+     as max_price_mapping
+   left join
+     (select sql_exercise.Products.*, sql_exercise.Manufacturers.Name manu_name
+      from sql_exercise.Products join sql_exercise.Manufacturers
+      on (sql_exercise.Products.manufacturer = sql_exercise.Manufacturers.code))-- 表链接 取出工厂名用于下一步链接
+      as products_with_manu_name
+ on
+   (max_price_mapping.name = products_with_manu_name.manu_name
+    and
+    max_price_mapping.price = products_with_manu_name.price);#这里的on链接有点看不懂。?????
+
 -- 1.17 Add a new product: Loudspeakers, $70, manufacturer 2.
+insert into sql_exercise.Products set sql_exercise.Products.Name='Loudspeakers',Price='70',Manufacturer=2,Code=11;
 -- 1.18 Update the name of product 8 to "Laser Printer".
--- 1.19 Apply a 10% discount to all products.
+update sql_exercise.Products
+set Name = 'Laser Printer'
+where Code=8;
+-- 1.19 ******Apply a 10% discount to all products.
+update sql_exercise.Products
+set Price = Price * 0.9;
 -- 1.20 Apply a 10% discount to all products with a price larger than or equal to $120.
+update sql_exercise.Products
+set Price = Price * 0.9
+where Price>=120;
