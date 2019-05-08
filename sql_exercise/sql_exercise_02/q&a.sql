@@ -1,3 +1,5 @@
+# 总结：
+# sum是对列的值，count是对列的个数；
 select *
 from sql_exercise.Employees;
 select *
@@ -20,21 +22,47 @@ select * from Employees where LastName like 'S%';
 -- 2.8 Select the sum of all the departments' budgets.
 select sum(sql_exercise.Departments.Budget) from Departments;
 -- 2.9 Select the number of employees in each department (you only need to show the department code and the number of employees).
-select Department,count(*) from Employees group by Employees.Department  #????? 。sum是对列对值，count是对列的个数；
+select Department,count(*) from Employees group by Employees.Department ; #????? 。sum是对列对值，count是对列的个数；
 -- 2.10 Select all the data of employees, including each employee's department's data.
 select a.* ,b.* from Employees a,Departments b where a.Department=b.Code;
 #用left更复合题目要求
 select a.* ,b.* from Employees a left join Departments b on a.Department = b.Code;
 -- 2.11 Select the name and last name of each employee, along with the name and budget of the employee's department.
 select a.name,a.LastName,b.Name,b.Budget from sql_exercise.Employees a join sql_exercise.Departments b on a.Department = b.Code;
+
 -- 2.12 Select the name and last name of employees working for departments with a budget greater than $60,000.
 select a.name,a.LastName,b.Budget from sql_exercise.Employees a join sql_exercise.Departments b on a.Department = b.Code where b.Budget>60000;
 -- 2.13 Select the departments with a budget larger than the average budget of all the departments.
 select * from sql_exercise.Departments where Budget > (select avg(Budget) from sql_exercise.Departments)
 -- 2.14 Select the names of departments with more than two employees.
 select b.Name from (select Department from sql_exercise.Employees group by Department having count(*)>2) a,sql_exercise.Departments b where a.Department=b.Code;#inner join
+#答案除了上述写法还有一个写法：
+SELECT Name FROM Departments
+  WHERE Code IN
+  (
+    SELECT Department
+      FROM Employees
+      GROUP BY Department
+      HAVING COUNT(*) > 2
+  );
 -- 2.15 Very Important *****- Select the name and last name of employees working for departments with second lowest budget.
 select b.Name,b.LastName from (select * from ( select  * from sql_exercise.Departments where Budget>(select min(Budget) from sql_exercise.Departments)) as D order by D.Budget limit 1 ) a , sql_exercise.Employees b where a.Code=b.Department;
+#答案1
+#通过limit2再倒序limit1非常聪明，这种写法可以推广到第三低，第四低等等。不会造成过重的负担
+select name, lastname
+from sql_exercise.Employees
+where sql_exercise.Employees.Department =(
+select temp.code
+from (select * from sql_exercise.Departments order by budget limit 2) temp
+order by temp.budget desc limit 1
+);
+#答案2
+SELECT e.Name, e.LastName
+FROM Employees e
+WHERE e.Department = (
+       SELECT sub.Code
+       FROM (SELECT * FROM Departments d ORDER BY d.budget LIMIT 2) sub
+       ORDER BY budget DESC LIMIT 1);
 -- 2.16  Add a new department called "Quality Assurance", with a budget of $40,000 and departmental code 11.
 insert  sql_exercise.Departments (Code, Name, Budget) values (11,'Quality Assurance',40000);
 -- And Add an employee called "Mary Moore" in that department, with SSN 847-21-9811.
