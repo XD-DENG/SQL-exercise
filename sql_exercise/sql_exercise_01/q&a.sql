@@ -1,11 +1,11 @@
 # 总结
 # 1、where 后的条件匹配:
 # >=大于等于,=等于,
-# between and 代表[]
+# between and 代表[]=闭区间
 # 2、order by 后面用 ,逗号分割
-# 3、表的链接查询，通过外键链接a.Manufacturer=b.Code，通过left，right,inner join来限定链接结果。
+# 3、表的链接查询，通常通过外键链接a.Manufacturer=b.Code，通过left，right,inner join来限定链接结果。
 # 4、group by的条件筛选是having而不是where
-# 5、在where条件中使用min()提示invalid use of group function。那么组函数使用有什么约束呢？
+# 5、在where条件中使用min()提示invalid use of group function。where中不能使用聚合函数（也叫列函数）的原因
 # 6、查询最大或最小 a)子查询；b)排序后，限制查询结果数为1
 # 7、from后面多个表相当于inner join。原先的on由where代替
 # 8、 on 后面多个条件用 and 链接
@@ -18,9 +18,9 @@ select name,price from sql_exercise.Products;
 -- 1.3 Select the name of the products with a price less than or equal to $200.
 select name from sql_exercise.Products where Price <=200;
 -- 1.4 Select all the products with a price between $60 and $120.
-select * from sql_exercise.Products where Price between 60 and 120;#between and 是开闭区间还是闭区间？
+select * from sql_exercise.Products where Price between 60 and 120;#between and 是闭区间
 -- 1.5 Select the name and price in cents (i.e., the price must be multiplied by 100).
-#?
+select name,price*100 as cents from sql_exercise.Products;
 -- 1.6 Compute the average price of all the products.
 select avg(sql_exercise.Products.Price) from sql_exercise.Products;#如何格式化输出呢？
 -- 1.7 Compute the average price of all products with manufacturer code equal to 2.
@@ -37,11 +37,14 @@ select a.name,a.price,b.name from sql_exercise.Products a left join sql_exercise
 select b.code,avg(a.Price) from sql_exercise.Products a left join sql_exercise.Manufacturers b on a.Manufacturer=b.Code group by b.code;
 -- 1.13 Select the average price of each manufacturer's products, showing the manufacturer's name.
 select b.Name,avg(a.Price) from sql_exercise.Products a left join sql_exercise.Manufacturers b on a.Manufacturer=b.Code group by b.code;
--- 1.14 Select the names of manufacturer whose products have an average price larger than or equal to $150.
+-- 1.14 *****Select the names of manufacturer whose products have an average price larger than or equal to $150.
 select b.Name ,avg(a.Price) from sql_exercise.Products  a   join sql_exercise.Manufacturers b on a.Manufacturer=b.Code group by b.Code having avg(a.Price)>=150;#这是正确答案用join而不是我用left join
+# 这是一个与此题无关的脚本，它举例了having的意义：对'结果集'的'统计数据'的'筛选'。一般与group by一起使用。相当于对各个group的结果集进行统计，筛选。如果不用group by相当于对整个结果集（就是一个分组）进行筛选。
+select avg(a.Price) from sql_exercise.Products  a   join sql_exercise.Manufacturers b on a.Manufacturer=b.Code  having avg(a.Price)>=10;
+
 -- 1.15 Select the name and price of the cheapest product.#要用子查询
 # 子查询
-select sql_exercise.Products.Name,sql_exercise.Products.Price from sql_exercise.Products where Price=(select min(sql_exercise.Products.Price) from sql_exercise.Products)
+select sql_exercise.Products.Name,sql_exercise.Products.Price from sql_exercise.Products where Price=(select min(sql_exercise.Products.Price) from sql_exercise.Products);
 # 升序后， 限制查询条数为1
 select sql_exercise.Products.Name,sql_exercise.Products.Price from sql_exercise.Products order by Price limit 1;#sqlserver top 1
 -- 1.16 ***** Select the name of each manufacturer along with the name and price of its most expensive product.
