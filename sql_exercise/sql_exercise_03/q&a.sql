@@ -1,5 +1,6 @@
 # 总结：
 # 1、进行了表链接查询时，如果给表取了别名。那么select子句要用链接表的别名，用schemas全名都是不可以的。注意了-详见本页3.7
+#   取了别名都用别名，包括on后面的
 #     还有个不能用全名的是在删除表的外键的时候。详见本页3.18例子
 # 2、索引的创建,索引创建在表的列上
 # 3、删除索引-索引列如果是外键可能删不掉。-Cannot drop index 'INDEX_WAREHOUSE': needed in a foreign key constraint
