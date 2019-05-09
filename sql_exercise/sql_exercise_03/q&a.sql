@@ -1,5 +1,5 @@
 # 总结：
-# 1、进行了表链接查询的select子句要用链接表的别名，用schemas全名都是不可以的。注意了
+# 1、进行了表链接查询时，如果给表取了别名。那么select子句要用链接表的别名，用schemas全名都是不可以的。注意了-详见本页3.7
 #     还有个不能用全名的是在删除表的外键的时候。详见本页3.18例子
 # 2、索引的创建,索引创建在表的列上
 # 3、删除索引-索引列如果是外键可能删不掉。-Cannot drop index 'INDEX_WAREHOUSE': needed in a foreign key constraint
@@ -28,9 +28,10 @@ select sql_exercise.Boxes.Warehouse,avg(sql_exercise.Boxes.Value) from sql_exerc
 -- 3.7 Select the code of each box, along with the name of the city the box is located in.
 select a.Code,b.Location as cityName from sql_exercise.Boxes a,sql_exercise.Warehouses  b where a.Warehouse=b.Code;
 #下面这句是不行的。不行在select的子句，会报找不到。
-#猜想原因是，这里有进行表链接，链接后就是新的表。要通过别名进行访问。如果还用schemas全名进行访问是不行的。
-#如果没有表链接，select 子句这么写，通过schemas全名是没有问题的。
-#  select sql_exercise.Boxes.Code,sql_exercise.Warehouses.Location as cityName from sql_exercise.Boxes a,sql_exercise.Warehouses  b where a.Warehouse=b.Code;
+#表链接用了别名，select子句要通过别名进行访问。如果还用schemas全名进行访问是不行的。
+#如果没有用别名，select 子句用schemas.tableName全名是没有问题的。
+select sql_exercise.Boxes.Code,sql_exercise.Warehouses.Location as cityName from sql_exercise.Boxes a,sql_exercise.Warehouses  b where a.Warehouse=b.Code;
+select sql_exercise.Boxes.Code,sql_exercise.Warehouses.Location as cityName from sql_exercise.Boxes ,sql_exercise.Warehouses  where sql_exercise.Boxes.Warehouse=sql_exercise.Warehouses.Code;
 
 -- 3.8 Select the warehouse codes, along with the number of boxes in each warehouse.
 select  Warehouse,count(*) from Boxes group by Warehouse;
@@ -112,6 +113,7 @@ SHOW INDEX FROM sql_exercise.Boxes;
     -- !!!NOTE!!!: index should NOT be used on small tables in practice
 
 ALTER TABLE sql_exercise.Boxes DROP FOREIGN KEY Boxes_ibfk_1 ;
-# ALTER TABLE sql_exercise.Boxes DROP FOREIGN KEY sql_exercise.Boxes.Boxes_ibfk_1 ;-- 这样写是不可以的，不能sql_exercise.Boxes.Boxes_ibfk_1  只能Boxes_ibfk_1
+# ALTER TABLE sql_exercise.Boxes DROP FOREIGN KEY sql_exercise.Boxes.Boxes_ibfk_1 ;
+# -- 这样写是不可以的，不能sql_exercise.Boxes.Boxes_ibfk_1  只能Boxes_ibfk_1
 drop index INDEX_WAREHOUSE on sql_exercise.Boxes;
 #Cannot drop index 'INDEX_WAREHOUSE': needed in a foreign key constraint
