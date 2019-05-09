@@ -5,7 +5,7 @@
 # 4、not in 判断是否在集合内，这个集合必须没有null。否者不行。in好像没毛病
 #    答案原话-- the query below would FAIL due to the NULL value returned by the subquery
 #     请看本页4.7例子
-# 链接查询比子查询性能好。
+# 链接查询比子查询性能好。局说是因为临时表的原因。
 
 # 5、where movies 相当于 where movies is not null;发现新大陆。
 use sql_exercise;
