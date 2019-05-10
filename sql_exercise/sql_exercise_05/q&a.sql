@@ -1,5 +1,8 @@
 # 总结：
 # 1、如果有两个外键，只创建一个外键的索引。看表是这样。还未验证
+# 2、相关子查询。外部查询与子查询，相互依赖，相互影响。
+# 例子5.5子查询where之后的and有点表链接的意思。
+
 # 问题：
 #为什么外键要创建索引？
 use sql_exercise;
@@ -24,7 +27,7 @@ SELECT Name
   (
     SELECT * FROM Provides
       WHERE Provider = 'HAL'
-        AND Piece = sql_exercise.Pieces.Code
+        AND Piece = sql_exercise.Pieces.Code -- 这句话有点表链接的意思。链接了内外查询的两张表。骚操作。
   );
 -- 5.6
 -- ---------------------------------------------
