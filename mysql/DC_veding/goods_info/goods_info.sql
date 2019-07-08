@@ -24,6 +24,7 @@ from (select * from dc_device_goods_info where device_id = '024e1b1a523147a49140
 
 
 
+
          select b.name,b.goods_category_id ,b.id as B_ID,a.container_id,a.container_no,a.row,a.col,a.capacity,a.price
 from (select * from dc_device_goods_info where device_id = '024e1b1a523147a4914027af33371c7f') a
          left join dc_goods b on a.goods_id = b.id  where b.name='统一红烧牛肉面';
