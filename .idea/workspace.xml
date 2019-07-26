@@ -1,0 +1,682 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="8956e384-cd06-4f43-848c-da6698d36f16" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/mysql/DC_veding/goods_info/goods_info.sql" beforeDir="false" afterPath="$PROJECT_DIR$/mysql/DC_veding/goods_info/goods_info.sql" afterDir="false" />
+    </list>
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="DatabaseView">
+    <option name="SHOW_INTERMEDIATE" value="true" />
+    <option name="GROUP_DATA_SOURCES" value="true" />
+    <option name="GROUP_SCHEMA" value="true" />
+    <option name="GROUP_CONTENTS" value="false" />
+    <option name="SORT_POSITIONED" value="false" />
+    <option name="SHOW_EMPTY_GROUPS" value="false" />
+    <option name="AUTO_SCROLL_FROM_SOURCE" value="false" />
+    <option name="HIDDEN_KINDS">
+      <set />
+    </option>
+    <expand>
+      <path>
+        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
+        <item name="dc" type="feb32156:DbDataSourceImpl" />
+      </path>
+      <path>
+        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
+        <item name="dc" type="feb32156:DbDataSourceImpl" />
+        <item name="schemas" type="d4e8921:DatabaseStructure$FamilyGroup" />
+      </path>
+      <path>
+        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
+        <item name="dc" type="feb32156:DbDataSourceImpl" />
+        <item name="schemas" type="d4e8921:DatabaseStructure$FamilyGroup" />
+        <item name="sweeppayvendingcommon: schema" type="76f4a085:MysqlImplModel$Schema" />
+      </path>
+      <path>
+        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
+        <item name="mysqlAbb=for5.1" type="feb32156:DbDataSourceImpl" />
+      </path>
+      <path>
+        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
+        <item name="payment.db" type="feb32156:DbDataSourceImpl" />
+      </path>
+      <path>
+        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
+        <item name="payment.db" type="feb32156:DbDataSourceImpl" />
+        <item name="schemas" type="d4e8921:DatabaseStructure$FamilyGroup" />
+      </path>
+      <path>
+        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
+        <item name="payment.db" type="feb32156:DbDataSourceImpl" />
+        <item name="schemas" type="d4e8921:DatabaseStructure$FamilyGroup" />
+        <item name="main: schema" type="981a47c2:SqliteImplModel$Schema" />
+      </path>
+    </expand>
+    <select />
+  </component>
+  <component name="FileEditorManager">
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file pinned="false" current-in-tab="false">
+        <entry file="das://05f35e04-1472-4221-81eb-860cac9670e3/schema/main/table/T_Card_BIN_B">
+          <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+            <state projectRestartId="a5f90287-395c-425a-8283-3b571d308a85">
+              <filtering>
+                <filter text="" />
+              </filtering>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="das://05f35e04-1472-4221-81eb-860cac9670e3/schema/main/table/T_Card_BIN_C">
+          <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+            <state projectRestartId="a5f90287-395c-425a-8283-3b571d308a85">
+              <filtering>
+                <filter text="" />
+              </filtering>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="das://05f35e04-1472-4221-81eb-860cac9670e3/schema/main/table/T_USER">
+          <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+            <state projectRestartId="a5f90287-395c-425a-8283-3b571d308a85">
+              <filtering>
+                <filter text="" />
+              </filtering>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/mysql/sql_exercise/sql_exercise/sql_exercise_02/q&amp;a.sql">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="225">
+              <caret line="15" column="53" selection-start-line="15" selection-start-column="53" selection-end-line="15" selection-end-column="53" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/mysql/sql_exercise/sql_exercise/sql_exercise_02/2_build_schema.sql">
+          <provider selected="true" editor-type-id="text-editor" />
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/mysql/sql_exercise/sql_exercise/sql_exercise_02/eplDependentOnDepartments.jpg">
+          <provider selected="true" editor-type-id="images" />
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="das://05f35e04-1472-4221-81eb-860cac9670e3/schema/main/table/t_water">
+          <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+            <state projectRestartId="a5f90287-395c-425a-8283-3b571d308a85">
+              <filtering>
+                <filter text="" />
+              </filtering>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/mysql/sql_exercise/sql_exercise/sql_exercise_01/q&amp;a.sql">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="420">
+              <caret line="28" column="41" selection-start-line="28" selection-start-column="41" selection-end-line="28" selection-end-column="41" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="das://05f35e04-1472-4221-81eb-860cac9670e3/schema/main/table/T_Card_BIN_A">
+          <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+            <state projectRestartId="a5f90287-395c-425a-8283-3b571d308a85">
+              <filtering>
+                <filter text="" />
+              </filtering>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="uml://DATABASE/9fc8373c-af2a-4198-9d50-976803f14269.TABLE:sweeppayvendingcommon.dc_ad">
+          <provider selected="true" editor-type-id="UmlEditorProvider">
+            <state>
+              <ID>DATABASE</ID>
+              <OriginalElement>9fc8373c-af2a-4198-9d50-976803f14269.TABLE:sweeppayvendingcommon.dc_ad</OriginalElement>
+              <nodes>
+                <node x="0.0" y="1948.0">9fc8373c-af2a-4198-9d50-976803f14269.TABLE:sweeppayvendingcommon.dc_device_control</node>
+                <node x="282.2076388888888" y="858.0">9fc8373c-af2a-4198-9d50-976803f14269.TABLE:sweeppayvendingcommon.dc_staff</node>
+                <node x="2032.3569444444443" y="0.0">9fc8373c-af2a-4198-9d50-976803f14269.TABLE:sweeppayvendingcommon.pay_alipay_request_log</node>
+                <node x="259.0" y="2394.0">9fc8373c-af2a-4198-9d50-976803f14269.TABLE:sweeppayvendingcommon.dc_replenishment_record_detail</node>
+                <node x="1003.0" y="2752.0">9fc8373c-af2a-4198-9d50-976803f14269.TABLE:sweeppayvendingcommon.pay_weixin_account</node>
+                <node x="1978.0" y="1348.0">9fc8373c-af2a-4198-9d50-976803f14269.TABLE:sweeppayvendingcommon.dc_site</node>
+                <node x="264.0" y="2752.0">9fc8373c-af2a-4198-9d50-976803f14269.TABLE:sweeppayvendingcommon.dc_stock</node>
+                <node x="259.0" y="1948.0">9fc8373c-af2a-4198-9d50-976803f14269.TABLE:sweeppayvendingcommon.dc_config_weixin</node>
+                <node x="2556.0" y="2752.0">9fc8373c-af2a-4198-9d50-976803f14269.TABLE:sweeppayvendingcommon.dc_ad_device</node>
+                <node x="856.0" y="1348.0">9fc8373c-af2a-4198-9d50-976803f14269.TABLE:sweeppayvendingcommon.dc_order_detail</node>
+                <node x="531.0" y="2752.0">9fc8373c-af2a-4198-9d50-976803f14269.TABLE:sweeppayvendingcommon.dc_device_control_upgrade</node>
+                <node x="1560.0" y="2394.0">9fc8373c-af2a-4198-9d50-976803f14269.TABLE:sweeppayvendingcommon.dc_unit</node>
+                <node x="53.20763888888882" y="924.0">9fc8373c-af2a-4198-9d50-976803f14269.TABLE:sweeppayvendingcommon.dc_dict_item</node>
+                <node x="781.0" y="2752.0">9fc8373c-af2a-4198-9d50-976803f14269.TABLE:sweeppayvendingcommon.dc_replenishment_list</node>
+                <node x="547.0" y="1348.0">9fc8373c-af2a-4198-9d50-976803f14269.TABLE:sweeppayvendingcommon.dc_stock_check_item</node>
+                <node x="2331.3569444444443" y="0.0">9fc8373c-af2a-4198-9d50-976803f14269.TABLE:sweeppayvendingcommon.pay_weixin_request_log</node>
+                <node x="2137.0" y="1948.0">9fc8373c-af2a-4198-9d50-976803f14269.TABLE:sweeppayvendingcommon.dc_log</node>
+                <node x="2069.0" y="2752.0">9fc8373c-af2a-4198-9d50-976803f14269.TABLE:sweeppayvendingcommon.dc_goods_unit</node>
+                <node x="168.79166666666663" y="0.0">9fc8373c-af2a-4198-9d50-976803f14269.TABLE:sweeppayvendingcommon.dc_merchant</node>
+                <node x="0.0" y="2394.0">9fc8373c-af2a-4198-9d50-976803f14269.TABLE:sweeppayvendingcommon.dc_configure_template</node>
+                <node x="2767.0" y="1348.0">9fc8373c-af2a-4198-9d50-976803f14269.TABLE:sweeppayvendingcommon.dc_config_alipay</node>
+                <node x="897.3305555555555" y="1045.5">9fc8373c-af2a-4198-9d50-976803f14269.TABLE:sweeppayvendingcommon.dc_role_menu_rela</node>
+                <node x="739.3569444444444" y="484.0">9fc8373c-af2a-4198-9d50-976803f14269.TABLE:sweeppayvendingcommon.dc_role</node>
+                <node x="1222.3569444444443" y="0.0">9fc8373c-af2a-4198-9d50-976803f14269.TABLE:sweeppayvendingcommon.pay_alipay_response_log</node>
+                <node x="544.0" y="2394.0">9fc8373c-af2a-4198-9d50-976803f14269.TABLE:sweeppayvendingcommon.dc_device_model</node>
+                <node x="1645.0" y="1348.0">9fc8373c-af2a-4198-9d50-976803f14269.TABLE:sweeppayvendingcommon.dc_allot_note</node>
+                <node x="2622.0" y="1948.0">9fc8373c-af2a-4198-9d50-976803f14269.TABLE:sweeppayvendingcommon.dc_stock_check</node>
+                <node x="2542.0" y="2394.0">9fc8373c-af2a-4198-9d50-976803f14269.TABLE:sweeppayvendingcommon.dc_replenishment_plan</node>
+                <node x="1306.0" y="2394.0">9fc8373c-af2a-4198-9d50-976803f14269.TABLE:sweeppayvendingcommon.dc_line</node>
+                <node x="798.0" y="2394.0">9fc8373c-af2a-4198-9d50-976803f14269.TABLE:sweeppayvendingcommon.dc_warehouse</node>
+                <node x="1878.0" y="1948.0">9fc8373c-af2a-4198-9d50-976803f14269.TABLE:sweeppayvendingcommon.dc_device_info</node>
+                <node x="776.0" y="1948.0">9fc8373c-af2a-4198-9d50-976803f14269.TABLE:sweeppayvendingcommon.dc_delivery_receiving_rela</node>
+                <node x="1502.3569444444443" y="0.0">9fc8373c-af2a-4198-9d50-976803f14269.TABLE:sweeppayvendingcommon.pay_weixin_response_log</node>
+                <node x="1077.0" y="1948.0">9fc8373c-af2a-4198-9d50-976803f14269.TABLE:sweeppayvendingcommon.dc_configure_template_detail</node>
+                <node x="281.35694444444437" y="462.0">9fc8373c-af2a-4198-9d50-976803f14269.TABLE:sweeppayvendingcommon.dc_org</node>
+                <node x="1221.0" y="2752.0">9fc8373c-af2a-4198-9d50-976803f14269.TABLE:sweeppayvendingcommon.pay_alipay_account</node>
+                <node x="2511.0" y="1348.0">9fc8373c-af2a-4198-9d50-976803f14269.TABLE:sweeppayvendingcommon.dc_district</node>
+                <node x="1380.0" y="1348.0">9fc8373c-af2a-4198-9d50-976803f14269.TABLE:sweeppayvendingcommon.dc_receiving_note</node>
+                <node x="1832.0" y="2394.0">9fc8373c-af2a-4198-9d50-976803f14269.TABLE:sweeppayvendingcommon.dc_goods_category</node>
+                <node x="2324.0" y="2394.0">9fc8373c-af2a-4198-9d50-976803f14269.TABLE:sweeppayvendingcommon.dc_check_log</node>
+                <node x="522.0" y="1948.0">9fc8373c-af2a-4198-9d50-976803f14269.TABLE:sweeppayvendingcommon.dc_device_goods_info</node>
+                <node x="1114.0" y="1348.0">9fc8373c-af2a-4198-9d50-976803f14269.TABLE:sweeppayvendingcommon.dc_allot_note_detail</node>
+                <node x="0.0" y="484.0">9fc8373c-af2a-4198-9d50-976803f14269.TABLE:sweeppayvendingcommon.dc_dict</node>
+                <node x="968.3569444444444" y="451.0">9fc8373c-af2a-4198-9d50-976803f14269.TABLE:sweeppayvendingcommon.dc_menu</node>
+                <node x="0.0" y="1348.0">9fc8373c-af2a-4198-9d50-976803f14269.TABLE:sweeppayvendingcommon.dc_delivery_note_item</node>
+                <node x="2341.0" y="2752.0">9fc8373c-af2a-4198-9d50-976803f14269.TABLE:sweeppayvendingcommon.dc_device_staff_rela</node>
+                <node x="0.0" y="2752.0">9fc8373c-af2a-4198-9d50-976803f14269.TABLE:sweeppayvendingcommon.dc_replenishment_goods_list</node>
+                <node x="274.0" y="1348.0">9fc8373c-af2a-4198-9d50-976803f14269.TABLE:sweeppayvendingcommon.dc_goods</node>
+                <node x="1749.3569444444443" y="0.0">9fc8373c-af2a-4198-9d50-976803f14269.TABLE:sweeppayvendingcommon.dc_order</node>
+                <node x="1052.0" y="2394.0">9fc8373c-af2a-4198-9d50-976803f14269.TABLE:sweeppayvendingcommon.dc_partition</node>
+                <node x="2246.0" y="1348.0">9fc8373c-af2a-4198-9d50-976803f14269.TABLE:sweeppayvendingcommon.dc_delivery_note</node>
+                <node x="1348.0" y="1948.0">9fc8373c-af2a-4198-9d50-976803f14269.TABLE:sweeppayvendingcommon.dc_device_container</node>
+                <node x="1784.0" y="2752.0">9fc8373c-af2a-4198-9d50-976803f14269.TABLE:sweeppayvendingcommon.dc_device_model_container_rela</node>
+                <node x="2086.0" y="2394.0">9fc8373c-af2a-4198-9d50-976803f14269.TABLE:sweeppayvendingcommon.dc_device_monitor</node>
+                <node x="2582.3569444444443" y="0.0">9fc8373c-af2a-4198-9d50-976803f14269.TABLE:sweeppayvendingcommon.dc_receiving_note_item</node>
+                <node x="2351.0" y="1948.0">9fc8373c-af2a-4198-9d50-976803f14269.TABLE:sweeppayvendingcommon.dc_device_goods_info_history</node>
+                <node x="1502.0" y="2752.0">9fc8373c-af2a-4198-9d50-976803f14269.TABLE:sweeppayvendingcommon.dc_device_container_capacity</node>
+                <node x="652.3743055555555" y="1045.5">9fc8373c-af2a-4198-9d50-976803f14269.TABLE:sweeppayvendingcommon.dc_user_role_rela</node>
+                <node x="510.35694444444437" y="429.0">9fc8373c-af2a-4198-9d50-976803f14269.TABLE:sweeppayvendingcommon.dc_user</node>
+                <node x="2764.0" y="2394.0">9fc8373c-af2a-4198-9d50-976803f14269.TABLE:sweeppayvendingcommon.dc_replenishment_record</node>
+                <node x="1615.0" y="1948.0">9fc8373c-af2a-4198-9d50-976803f14269.TABLE:sweeppayvendingcommon.dc_ad</node>
+              </nodes>
+              <notes />
+              <edges>
+                <edge source="9fc8373c-af2a-4198-9d50-976803f14269.TABLE:sweeppayvendingcommon.dc_user_role_rela" target="9fc8373c-af2a-4198-9d50-976803f14269.TABLE:sweeppayvendingcommon.dc_role">
+                  <point x="38.25" y="-35.0" />
+                  <point x="767.1243055555555" y="833.0" />
+                  <point x="791.6069444444444" y="833.0" />
+                  <point x="-52.25" y="134.5" />
+                </edge>
+                <edge source="9fc8373c-af2a-4198-9d50-976803f14269.TABLE:sweeppayvendingcommon.dc_dict_item" target="9fc8373c-af2a-4198-9d50-976803f14269.TABLE:sweeppayvendingcommon.dc_dict">
+                  <point x="-52.249999999999886" y="-156.5" />
+                  <point x="0.0" y="134.5" />
+                </edge>
+                <edge source="9fc8373c-af2a-4198-9d50-976803f14269.TABLE:sweeppayvendingcommon.dc_role_menu_rela" target="9fc8373c-af2a-4198-9d50-976803f14269.TABLE:sweeppayvendingcommon.dc_menu">
+                  <point x="40.0" y="-35.0" />
+                  <point x="1017.3305555555555" y="833.0" />
+                  <point x="1072.8569444444443" y="833.0" />
+                  <point x="0.0" y="167.5" />
+                </edge>
+                <edge source="9fc8373c-af2a-4198-9d50-976803f14269.TABLE:sweeppayvendingcommon.dc_staff" target="9fc8373c-af2a-4198-9d50-976803f14269.TABLE:sweeppayvendingcommon.dc_merchant">
+                  <point x="-69.66666666666669" y="-222.5" />
+                  <point x="317.04097222222214" y="833.0" />
+                  <point x="250.73194444444448" y="833.0" />
+                  <point x="250.73194444444448" y="409.0" />
+                  <point x="273.29166666666663" y="409.0" />
+                  <point x="0.0" y="189.5" />
+                </edge>
+                <edge source="9fc8373c-af2a-4198-9d50-976803f14269.TABLE:sweeppayvendingcommon.dc_dict" target="9fc8373c-af2a-4198-9d50-976803f14269.TABLE:sweeppayvendingcommon.dc_merchant">
+                  <point x="0.0" y="-134.5" />
+                  <point x="104.5" y="409.0" />
+                  <point x="189.6916666666666" y="409.0" />
+                  <point x="-83.60000000000002" y="189.5" />
+                </edge>
+                <edge source="9fc8373c-af2a-4198-9d50-976803f14269.TABLE:sweeppayvendingcommon.dc_user_role_rela" target="9fc8373c-af2a-4198-9d50-976803f14269.TABLE:sweeppayvendingcommon.dc_user">
+                  <point x="-38.25" y="-35.0" />
+                  <point x="690.6243055555555" y="833.0" />
+                  <point x="667.1069444444444" y="833.0" />
+                  <point x="52.25" y="189.5" />
+                </edge>
+                <edge source="9fc8373c-af2a-4198-9d50-976803f14269.TABLE:sweeppayvendingcommon.dc_staff" target="9fc8373c-af2a-4198-9d50-976803f14269.TABLE:sweeppayvendingcommon.dc_user">
+                  <point x="69.66666666666669" y="-222.5" />
+                  <point x="456.3743055555555" y="833.0" />
+                  <point x="562.6069444444444" y="833.0" />
+                  <point x="-52.25" y="189.5" />
+                </edge>
+                <edge source="9fc8373c-af2a-4198-9d50-976803f14269.TABLE:sweeppayvendingcommon.dc_role" target="9fc8373c-af2a-4198-9d50-976803f14269.TABLE:sweeppayvendingcommon.dc_merchant">
+                  <point x="0.0" y="-134.5" />
+                  <point x="843.8569444444444" y="399.0" />
+                  <point x="356.89166666666665" y="399.0" />
+                  <point x="83.60000000000002" y="189.5" />
+                </edge>
+                <edge source="9fc8373c-af2a-4198-9d50-976803f14269.TABLE:sweeppayvendingcommon.dc_staff" target="9fc8373c-af2a-4198-9d50-976803f14269.TABLE:sweeppayvendingcommon.dc_org">
+                  <point x="-1.4210854715202004E-14" y="-222.5" />
+                  <point x="0.0" y="156.5" />
+                </edge>
+                <edge source="9fc8373c-af2a-4198-9d50-976803f14269.TABLE:sweeppayvendingcommon.dc_org" target="9fc8373c-af2a-4198-9d50-976803f14269.TABLE:sweeppayvendingcommon.dc_merchant">
+                  <point x="0.0" y="-156.5" />
+                  <point x="385.85694444444437" y="409.0" />
+                  <point x="315.0916666666667" y="409.0" />
+                  <point x="41.80000000000007" y="189.5" />
+                </edge>
+                <edge source="9fc8373c-af2a-4198-9d50-976803f14269.TABLE:sweeppayvendingcommon.dc_role_menu_rela" target="9fc8373c-af2a-4198-9d50-976803f14269.TABLE:sweeppayvendingcommon.dc_role">
+                  <point x="-40.0" y="-35.0" />
+                  <point x="937.3305555555555" y="833.0" />
+                  <point x="896.1069444444444" y="833.0" />
+                  <point x="52.25" y="134.5" />
+                </edge>
+                <edge source="9fc8373c-af2a-4198-9d50-976803f14269.TABLE:sweeppayvendingcommon.dc_dict_item" target="9fc8373c-af2a-4198-9d50-976803f14269.TABLE:sweeppayvendingcommon.dc_merchant">
+                  <point x="52.250000000000114" y="-156.5" />
+                  <point x="209.95763888888894" y="833.0" />
+                  <point x="219.5" y="833.0" />
+                  <point x="219.5" y="409.0" />
+                  <point x="231.49166666666667" y="409.0" />
+                  <point x="-41.799999999999955" y="189.5" />
+                </edge>
+              </edges>
+              <settings layout="Hierarchic Group" zoom="0.22664244507910494" x="116.77376481358306" y="577.5425101672538" />
+              <SelectedNodes>
+                <node>9fc8373c-af2a-4198-9d50-976803f14269.TABLE:sweeppayvendingcommon.dc_role_menu_rela</node>
+              </SelectedNodes>
+              <Categories>
+                <Category>Key columns</Category>
+                <Category>Columns</Category>
+              </Categories>
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="IdeDocumentHistory">
+    <option name="CHANGED_PATHS">
+      <list>
+        <option value="$PROJECT_DIR$/mysql/DC_veding/goods_info/goods_info.sql" />
+      </list>
+    </option>
+  </component>
+  <component name="ProjectFrameBounds">
+    <option name="y" value="23" />
+    <option name="width" value="1680" />
+    <option name="height" value="941" />
+  </component>
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectView">
+    <navigator proportions="" version="1">
+      <foldersAlwaysOnTop value="true" />
+    </navigator>
+    <panes>
+      <pane id="ProjectPane">
+        <subPane>
+          <expand>
+            <path>
+              <item name="db" type="e2918438:DataGripProjectViewPane$1$1" />
+              <item name="db" type="252d1985:DataGripProjectViewPane$1$1$1" />
+            </path>
+            <path>
+              <item name="db" type="e2918438:DataGripProjectViewPane$1$1" />
+              <item name="db" type="252d1985:DataGripProjectViewPane$1$1$1" />
+              <item name="mysql" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="db" type="e2918438:DataGripProjectViewPane$1$1" />
+              <item name="db" type="252d1985:DataGripProjectViewPane$1$1$1" />
+              <item name="mysql" type="462c0819:PsiDirectoryNode" />
+              <item name="sql_exercise" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="db" type="e2918438:DataGripProjectViewPane$1$1" />
+              <item name="db" type="252d1985:DataGripProjectViewPane$1$1$1" />
+              <item name="mysql" type="462c0819:PsiDirectoryNode" />
+              <item name="sql_exercise" type="462c0819:PsiDirectoryNode" />
+              <item name="sql_exercise" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="db" type="e2918438:DataGripProjectViewPane$1$1" />
+              <item name="db" type="252d1985:DataGripProjectViewPane$1$1$1" />
+              <item name="mysql" type="462c0819:PsiDirectoryNode" />
+              <item name="sql_exercise" type="462c0819:PsiDirectoryNode" />
+              <item name="sql_exercise" type="462c0819:PsiDirectoryNode" />
+              <item name="sql_exercise_02" type="462c0819:PsiDirectoryNode" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+      </pane>
+      <pane id="Scope" />
+    </panes>
+  </component>
+  <component name="PropertiesComponent">
+    <property name="DBE.Init.BalloonShown" value="true" />
+    <property name="GoToClass.toSaveIncludeLibraries" value="true" />
+    <property name="database.console.LAST_STATE" value="false" />
+    <property name="last_opened_file_path" value="$USER_HOME$" />
+  </component>
+  <component name="RunDashboard">
+    <option name="ruleStates">
+      <list>
+        <RuleState>
+          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
+        </RuleState>
+        <RuleState>
+          <option name="name" value="StatusDashboardGroupingRule" />
+        </RuleState>
+      </list>
+    </option>
+  </component>
+  <component name="ToolWindowManager">
+    <frame x="0" y="23" width="1680" height="941" extended-state="0" />
+    <editor active="true" />
+    <layout>
+      <window_info active="true" content_ui="combo" id="Database" order="0" visible="true" weight="0.16666667" />
+      <window_info id="Favorites" order="1" side_tool="true" />
+      <window_info anchor="bottom" id="Message" order="0" />
+      <window_info anchor="bottom" id="Find" order="1" />
+      <window_info anchor="bottom" id="Run" order="2" />
+      <window_info anchor="bottom" id="Inspection" order="3" weight="0.4" />
+      <window_info anchor="bottom" id="TODO" order="4" />
+      <window_info anchor="bottom" id="Database Console" order="5" weight="0.42167255" />
+      <window_info anchor="bottom" id="Database Changes" order="6" weight="0.32979977" />
+      <window_info anchor="bottom" id="Debug" order="7" />
+      <window_info anchor="bottom" id="Event Log" order="8" side_tool="true" weight="0.32979977" />
+      <window_info anchor="bottom" id="Version Control" order="9" />
+      <window_info anchor="right" content_ui="combo" id="Project" order="0" weight="0.25274727" />
+      <window_info anchor="right" id="Structure" order="1" side_tool="true" weight="0.25" />
+    </layout>
+  </component>
+  <component name="editorHistoryManager">
+    <entry file="das://9fc8373c-af2a-4198-9d50-976803f14269/schema/sweeppayvendingcommon/table/dc_allot_note">
+      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+        <state projectRestartId="574dc161-1a85-4132-8208-03a5fac1e8c3">
+          <filtering>
+            <filter text="" />
+          </filtering>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$APPLICATION_CONFIG_DIR$/consoles/db/05f35e04-1472-4221-81eb-860cac9670e3/console.sql">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/mysql/DC_veding/goods_info/goods_info.sql">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="540">
+          <caret line="36" selection-start-line="36" selection-end-line="36" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="das://9fc8373c-af2a-4198-9d50-976803f14269/schema/sweeppayvendingcommon/table/dc_goods_category">
+      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+        <state projectRestartId="1ed02c76-1f06-4ddb-8216-629a19b47db4">
+          <filtering />
+        </state>
+      </provider>
+    </entry>
+    <entry file="das://05f35e04-1472-4221-81eb-860cac9670e3/schema/main/table/android_metadata">
+      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+        <state projectRestartId="a5f90287-395c-425a-8283-3b571d308a85">
+          <filtering />
+        </state>
+      </provider>
+    </entry>
+    <entry file="das://05f35e04-1472-4221-81eb-860cac9670e3/schema/main/table/sqlite_master">
+      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+        <state projectRestartId="a5f90287-395c-425a-8283-3b571d308a85">
+          <filtering />
+        </state>
+      </provider>
+    </entry>
+    <entry file="das://05f35e04-1472-4221-81eb-860cac9670e3/schema/main/table/T_BLACK_CARD">
+      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+        <state projectRestartId="a5f90287-395c-425a-8283-3b571d308a85">
+          <filtering />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/mysql/sql_exercise/sql_exercise/sql_exercise_08/q&amp;a.sql">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="das://9fc8373c-af2a-4198-9d50-976803f14269/schema/sweeppayvendingcommon/table/dc_goods">
+      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+        <state projectRestartId="a5f90287-395c-425a-8283-3b571d308a85">
+          <filtering />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/mysql/sql_exercise/sql_exercise/sql_exercise_01/q&amp;a.sql">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="420">
+          <caret line="28" column="41" selection-start-line="28" selection-start-column="41" selection-end-line="28" selection-end-column="41" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="das://05f35e04-1472-4221-81eb-860cac9670e3/schema/main/table/T_Card_BIN_A">
+      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+        <state projectRestartId="a5f90287-395c-425a-8283-3b571d308a85">
+          <filtering>
+            <filter text="" />
+          </filtering>
+        </state>
+      </provider>
+    </entry>
+    <entry file="das://05f35e04-1472-4221-81eb-860cac9670e3/schema/main/table/T_Card_BIN_C">
+      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+        <state projectRestartId="a5f90287-395c-425a-8283-3b571d308a85">
+          <filtering>
+            <filter text="" />
+          </filtering>
+        </state>
+      </provider>
+    </entry>
+    <entry file="das://05f35e04-1472-4221-81eb-860cac9670e3/schema/main/table/t_water">
+      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+        <state projectRestartId="a5f90287-395c-425a-8283-3b571d308a85">
+          <filtering>
+            <filter text="" />
+          </filtering>
+        </state>
+      </provider>
+    </entry>
+    <entry file="das://05f35e04-1472-4221-81eb-860cac9670e3/schema/main/table/T_USER">
+      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+        <state projectRestartId="a5f90287-395c-425a-8283-3b571d308a85">
+          <filtering>
+            <filter text="" />
+          </filtering>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/mysql/sql_exercise/sql_exercise/sql_exercise_02/2_build_schema.sql">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="uml://DATABASE/9fc8373c-af2a-4198-9d50-976803f14269.TABLE:sweeppayvendingcommon.dc_ad">
+      <provider selected="true" editor-type-id="UmlEditorProvider">
+        <state>
+          <ID>DATABASE</ID>
+          <OriginalElement>9fc8373c-af2a-4198-9d50-976803f14269.TABLE:sweeppayvendingcommon.dc_ad</OriginalElement>
+          <nodes>
+            <node x="0.0" y="1948.0">9fc8373c-af2a-4198-9d50-976803f14269.TABLE:sweeppayvendingcommon.dc_device_control</node>
+            <node x="282.2076388888888" y="858.0">9fc8373c-af2a-4198-9d50-976803f14269.TABLE:sweeppayvendingcommon.dc_staff</node>
+            <node x="2032.3569444444443" y="0.0">9fc8373c-af2a-4198-9d50-976803f14269.TABLE:sweeppayvendingcommon.pay_alipay_request_log</node>
+            <node x="259.0" y="2394.0">9fc8373c-af2a-4198-9d50-976803f14269.TABLE:sweeppayvendingcommon.dc_replenishment_record_detail</node>
+            <node x="1003.0" y="2752.0">9fc8373c-af2a-4198-9d50-976803f14269.TABLE:sweeppayvendingcommon.pay_weixin_account</node>
+            <node x="1978.0" y="1348.0">9fc8373c-af2a-4198-9d50-976803f14269.TABLE:sweeppayvendingcommon.dc_site</node>
+            <node x="264.0" y="2752.0">9fc8373c-af2a-4198-9d50-976803f14269.TABLE:sweeppayvendingcommon.dc_stock</node>
+            <node x="259.0" y="1948.0">9fc8373c-af2a-4198-9d50-976803f14269.TABLE:sweeppayvendingcommon.dc_config_weixin</node>
+            <node x="2556.0" y="2752.0">9fc8373c-af2a-4198-9d50-976803f14269.TABLE:sweeppayvendingcommon.dc_ad_device</node>
+            <node x="856.0" y="1348.0">9fc8373c-af2a-4198-9d50-976803f14269.TABLE:sweeppayvendingcommon.dc_order_detail</node>
+            <node x="531.0" y="2752.0">9fc8373c-af2a-4198-9d50-976803f14269.TABLE:sweeppayvendingcommon.dc_device_control_upgrade</node>
+            <node x="1560.0" y="2394.0">9fc8373c-af2a-4198-9d50-976803f14269.TABLE:sweeppayvendingcommon.dc_unit</node>
+            <node x="53.20763888888882" y="924.0">9fc8373c-af2a-4198-9d50-976803f14269.TABLE:sweeppayvendingcommon.dc_dict_item</node>
+            <node x="781.0" y="2752.0">9fc8373c-af2a-4198-9d50-976803f14269.TABLE:sweeppayvendingcommon.dc_replenishment_list</node>
+            <node x="547.0" y="1348.0">9fc8373c-af2a-4198-9d50-976803f14269.TABLE:sweeppayvendingcommon.dc_stock_check_item</node>
+            <node x="2331.3569444444443" y="0.0">9fc8373c-af2a-4198-9d50-976803f14269.TABLE:sweeppayvendingcommon.pay_weixin_request_log</node>
+            <node x="2137.0" y="1948.0">9fc8373c-af2a-4198-9d50-976803f14269.TABLE:sweeppayvendingcommon.dc_log</node>
+            <node x="2069.0" y="2752.0">9fc8373c-af2a-4198-9d50-976803f14269.TABLE:sweeppayvendingcommon.dc_goods_unit</node>
+            <node x="168.79166666666663" y="0.0">9fc8373c-af2a-4198-9d50-976803f14269.TABLE:sweeppayvendingcommon.dc_merchant</node>
+            <node x="0.0" y="2394.0">9fc8373c-af2a-4198-9d50-976803f14269.TABLE:sweeppayvendingcommon.dc_configure_template</node>
+            <node x="2767.0" y="1348.0">9fc8373c-af2a-4198-9d50-976803f14269.TABLE:sweeppayvendingcommon.dc_config_alipay</node>
+            <node x="897.3305555555555" y="1045.5">9fc8373c-af2a-4198-9d50-976803f14269.TABLE:sweeppayvendingcommon.dc_role_menu_rela</node>
+            <node x="739.3569444444444" y="484.0">9fc8373c-af2a-4198-9d50-976803f14269.TABLE:sweeppayvendingcommon.dc_role</node>
+            <node x="1222.3569444444443" y="0.0">9fc8373c-af2a-4198-9d50-976803f14269.TABLE:sweeppayvendingcommon.pay_alipay_response_log</node>
+            <node x="544.0" y="2394.0">9fc8373c-af2a-4198-9d50-976803f14269.TABLE:sweeppayvendingcommon.dc_device_model</node>
+            <node x="1645.0" y="1348.0">9fc8373c-af2a-4198-9d50-976803f14269.TABLE:sweeppayvendingcommon.dc_allot_note</node>
+            <node x="2622.0" y="1948.0">9fc8373c-af2a-4198-9d50-976803f14269.TABLE:sweeppayvendingcommon.dc_stock_check</node>
+            <node x="2542.0" y="2394.0">9fc8373c-af2a-4198-9d50-976803f14269.TABLE:sweeppayvendingcommon.dc_replenishment_plan</node>
+            <node x="1306.0" y="2394.0">9fc8373c-af2a-4198-9d50-976803f14269.TABLE:sweeppayvendingcommon.dc_line</node>
+            <node x="798.0" y="2394.0">9fc8373c-af2a-4198-9d50-976803f14269.TABLE:sweeppayvendingcommon.dc_warehouse</node>
+            <node x="1878.0" y="1948.0">9fc8373c-af2a-4198-9d50-976803f14269.TABLE:sweeppayvendingcommon.dc_device_info</node>
+            <node x="776.0" y="1948.0">9fc8373c-af2a-4198-9d50-976803f14269.TABLE:sweeppayvendingcommon.dc_delivery_receiving_rela</node>
+            <node x="1502.3569444444443" y="0.0">9fc8373c-af2a-4198-9d50-976803f14269.TABLE:sweeppayvendingcommon.pay_weixin_response_log</node>
+            <node x="1077.0" y="1948.0">9fc8373c-af2a-4198-9d50-976803f14269.TABLE:sweeppayvendingcommon.dc_configure_template_detail</node>
+            <node x="281.35694444444437" y="462.0">9fc8373c-af2a-4198-9d50-976803f14269.TABLE:sweeppayvendingcommon.dc_org</node>
+            <node x="1221.0" y="2752.0">9fc8373c-af2a-4198-9d50-976803f14269.TABLE:sweeppayvendingcommon.pay_alipay_account</node>
+            <node x="2511.0" y="1348.0">9fc8373c-af2a-4198-9d50-976803f14269.TABLE:sweeppayvendingcommon.dc_district</node>
+            <node x="1380.0" y="1348.0">9fc8373c-af2a-4198-9d50-976803f14269.TABLE:sweeppayvendingcommon.dc_receiving_note</node>
+            <node x="1832.0" y="2394.0">9fc8373c-af2a-4198-9d50-976803f14269.TABLE:sweeppayvendingcommon.dc_goods_category</node>
+            <node x="2324.0" y="2394.0">9fc8373c-af2a-4198-9d50-976803f14269.TABLE:sweeppayvendingcommon.dc_check_log</node>
+            <node x="522.0" y="1948.0">9fc8373c-af2a-4198-9d50-976803f14269.TABLE:sweeppayvendingcommon.dc_device_goods_info</node>
+            <node x="1114.0" y="1348.0">9fc8373c-af2a-4198-9d50-976803f14269.TABLE:sweeppayvendingcommon.dc_allot_note_detail</node>
+            <node x="0.0" y="484.0">9fc8373c-af2a-4198-9d50-976803f14269.TABLE:sweeppayvendingcommon.dc_dict</node>
+            <node x="968.3569444444444" y="451.0">9fc8373c-af2a-4198-9d50-976803f14269.TABLE:sweeppayvendingcommon.dc_menu</node>
+            <node x="0.0" y="1348.0">9fc8373c-af2a-4198-9d50-976803f14269.TABLE:sweeppayvendingcommon.dc_delivery_note_item</node>
+            <node x="2341.0" y="2752.0">9fc8373c-af2a-4198-9d50-976803f14269.TABLE:sweeppayvendingcommon.dc_device_staff_rela</node>
+            <node x="0.0" y="2752.0">9fc8373c-af2a-4198-9d50-976803f14269.TABLE:sweeppayvendingcommon.dc_replenishment_goods_list</node>
+            <node x="274.0" y="1348.0">9fc8373c-af2a-4198-9d50-976803f14269.TABLE:sweeppayvendingcommon.dc_goods</node>
+            <node x="1749.3569444444443" y="0.0">9fc8373c-af2a-4198-9d50-976803f14269.TABLE:sweeppayvendingcommon.dc_order</node>
+            <node x="1052.0" y="2394.0">9fc8373c-af2a-4198-9d50-976803f14269.TABLE:sweeppayvendingcommon.dc_partition</node>
+            <node x="2246.0" y="1348.0">9fc8373c-af2a-4198-9d50-976803f14269.TABLE:sweeppayvendingcommon.dc_delivery_note</node>
+            <node x="1348.0" y="1948.0">9fc8373c-af2a-4198-9d50-976803f14269.TABLE:sweeppayvendingcommon.dc_device_container</node>
+            <node x="1784.0" y="2752.0">9fc8373c-af2a-4198-9d50-976803f14269.TABLE:sweeppayvendingcommon.dc_device_model_container_rela</node>
+            <node x="2086.0" y="2394.0">9fc8373c-af2a-4198-9d50-976803f14269.TABLE:sweeppayvendingcommon.dc_device_monitor</node>
+            <node x="2582.3569444444443" y="0.0">9fc8373c-af2a-4198-9d50-976803f14269.TABLE:sweeppayvendingcommon.dc_receiving_note_item</node>
+            <node x="2351.0" y="1948.0">9fc8373c-af2a-4198-9d50-976803f14269.TABLE:sweeppayvendingcommon.dc_device_goods_info_history</node>
+            <node x="1502.0" y="2752.0">9fc8373c-af2a-4198-9d50-976803f14269.TABLE:sweeppayvendingcommon.dc_device_container_capacity</node>
+            <node x="652.3743055555555" y="1045.5">9fc8373c-af2a-4198-9d50-976803f14269.TABLE:sweeppayvendingcommon.dc_user_role_rela</node>
+            <node x="510.35694444444437" y="429.0">9fc8373c-af2a-4198-9d50-976803f14269.TABLE:sweeppayvendingcommon.dc_user</node>
+            <node x="2764.0" y="2394.0">9fc8373c-af2a-4198-9d50-976803f14269.TABLE:sweeppayvendingcommon.dc_replenishment_record</node>
+            <node x="1615.0" y="1948.0">9fc8373c-af2a-4198-9d50-976803f14269.TABLE:sweeppayvendingcommon.dc_ad</node>
+          </nodes>
+          <notes />
+          <edges>
+            <edge source="9fc8373c-af2a-4198-9d50-976803f14269.TABLE:sweeppayvendingcommon.dc_user_role_rela" target="9fc8373c-af2a-4198-9d50-976803f14269.TABLE:sweeppayvendingcommon.dc_role">
+              <point x="38.25" y="-35.0" />
+              <point x="767.1243055555555" y="833.0" />
+              <point x="791.6069444444444" y="833.0" />
+              <point x="-52.25" y="134.5" />
+            </edge>
+            <edge source="9fc8373c-af2a-4198-9d50-976803f14269.TABLE:sweeppayvendingcommon.dc_dict_item" target="9fc8373c-af2a-4198-9d50-976803f14269.TABLE:sweeppayvendingcommon.dc_dict">
+              <point x="-52.249999999999886" y="-156.5" />
+              <point x="0.0" y="134.5" />
+            </edge>
+            <edge source="9fc8373c-af2a-4198-9d50-976803f14269.TABLE:sweeppayvendingcommon.dc_role_menu_rela" target="9fc8373c-af2a-4198-9d50-976803f14269.TABLE:sweeppayvendingcommon.dc_menu">
+              <point x="40.0" y="-35.0" />
+              <point x="1017.3305555555555" y="833.0" />
+              <point x="1072.8569444444443" y="833.0" />
+              <point x="0.0" y="167.5" />
+            </edge>
+            <edge source="9fc8373c-af2a-4198-9d50-976803f14269.TABLE:sweeppayvendingcommon.dc_staff" target="9fc8373c-af2a-4198-9d50-976803f14269.TABLE:sweeppayvendingcommon.dc_merchant">
+              <point x="-69.66666666666669" y="-222.5" />
+              <point x="317.04097222222214" y="833.0" />
+              <point x="250.73194444444448" y="833.0" />
+              <point x="250.73194444444448" y="409.0" />
+              <point x="273.29166666666663" y="409.0" />
+              <point x="0.0" y="189.5" />
+            </edge>
+            <edge source="9fc8373c-af2a-4198-9d50-976803f14269.TABLE:sweeppayvendingcommon.dc_dict" target="9fc8373c-af2a-4198-9d50-976803f14269.TABLE:sweeppayvendingcommon.dc_merchant">
+              <point x="0.0" y="-134.5" />
+              <point x="104.5" y="409.0" />
+              <point x="189.6916666666666" y="409.0" />
+              <point x="-83.60000000000002" y="189.5" />
+            </edge>
+            <edge source="9fc8373c-af2a-4198-9d50-976803f14269.TABLE:sweeppayvendingcommon.dc_user_role_rela" target="9fc8373c-af2a-4198-9d50-976803f14269.TABLE:sweeppayvendingcommon.dc_user">
+              <point x="-38.25" y="-35.0" />
+              <point x="690.6243055555555" y="833.0" />
+              <point x="667.1069444444444" y="833.0" />
+              <point x="52.25" y="189.5" />
+            </edge>
+            <edge source="9fc8373c-af2a-4198-9d50-976803f14269.TABLE:sweeppayvendingcommon.dc_staff" target="9fc8373c-af2a-4198-9d50-976803f14269.TABLE:sweeppayvendingcommon.dc_user">
+              <point x="69.66666666666669" y="-222.5" />
+              <point x="456.3743055555555" y="833.0" />
+              <point x="562.6069444444444" y="833.0" />
+              <point x="-52.25" y="189.5" />
+            </edge>
+            <edge source="9fc8373c-af2a-4198-9d50-976803f14269.TABLE:sweeppayvendingcommon.dc_role" target="9fc8373c-af2a-4198-9d50-976803f14269.TABLE:sweeppayvendingcommon.dc_merchant">
+              <point x="0.0" y="-134.5" />
+              <point x="843.8569444444444" y="399.0" />
+              <point x="356.89166666666665" y="399.0" />
+              <point x="83.60000000000002" y="189.5" />
+            </edge>
+            <edge source="9fc8373c-af2a-4198-9d50-976803f14269.TABLE:sweeppayvendingcommon.dc_staff" target="9fc8373c-af2a-4198-9d50-976803f14269.TABLE:sweeppayvendingcommon.dc_org">
+              <point x="-1.4210854715202004E-14" y="-222.5" />
+              <point x="0.0" y="156.5" />
+            </edge>
+            <edge source="9fc8373c-af2a-4198-9d50-976803f14269.TABLE:sweeppayvendingcommon.dc_org" target="9fc8373c-af2a-4198-9d50-976803f14269.TABLE:sweeppayvendingcommon.dc_merchant">
+              <point x="0.0" y="-156.5" />
+              <point x="385.85694444444437" y="409.0" />
+              <point x="315.0916666666667" y="409.0" />
+              <point x="41.80000000000007" y="189.5" />
+            </edge>
+            <edge source="9fc8373c-af2a-4198-9d50-976803f14269.TABLE:sweeppayvendingcommon.dc_role_menu_rela" target="9fc8373c-af2a-4198-9d50-976803f14269.TABLE:sweeppayvendingcommon.dc_role">
+              <point x="-40.0" y="-35.0" />
+              <point x="937.3305555555555" y="833.0" />
+              <point x="896.1069444444444" y="833.0" />
+              <point x="52.25" y="134.5" />
+            </edge>
+            <edge source="9fc8373c-af2a-4198-9d50-976803f14269.TABLE:sweeppayvendingcommon.dc_dict_item" target="9fc8373c-af2a-4198-9d50-976803f14269.TABLE:sweeppayvendingcommon.dc_merchant">
+              <point x="52.250000000000114" y="-156.5" />
+              <point x="209.95763888888894" y="833.0" />
+              <point x="219.5" y="833.0" />
+              <point x="219.5" y="409.0" />
+              <point x="231.49166666666667" y="409.0" />
+              <point x="-41.799999999999955" y="189.5" />
+            </edge>
+          </edges>
+          <settings layout="Hierarchic Group" zoom="0.22664244507910494" x="116.77376481358306" y="577.5425101672538" />
+          <SelectedNodes>
+            <node>9fc8373c-af2a-4198-9d50-976803f14269.TABLE:sweeppayvendingcommon.dc_role_menu_rela</node>
+          </SelectedNodes>
+          <Categories>
+            <Category>Key columns</Category>
+            <Category>Columns</Category>
+          </Categories>
+        </state>
+      </provider>
+    </entry>
+    <entry file="das://05f35e04-1472-4221-81eb-860cac9670e3/schema/main/table/T_Card_BIN_B">
+      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+        <state projectRestartId="a5f90287-395c-425a-8283-3b571d308a85">
+          <filtering>
+            <filter text="" />
+          </filtering>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/mysql/sql_exercise/sql_exercise/sql_exercise_02/q&amp;a.sql">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="225">
+          <caret line="15" column="53" selection-start-line="15" selection-start-column="53" selection-end-line="15" selection-end-column="53" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/mysql/sql_exercise/sql_exercise/sql_exercise_02/eplDependentOnDepartments.jpg">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+  </component>
+</project>
