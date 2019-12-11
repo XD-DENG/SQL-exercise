@@ -1,4 +1,6 @@
 -- https://en.wikibooks.org/wiki/SQL_Exercises/Movie_theatres
+CREATE DATABASE sql_exercises_4;
+USE sql_exercises_4;
 
 CREATE TABLE Movies (
   Code INTEGER PRIMARY KEY,

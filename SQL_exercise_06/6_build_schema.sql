@@ -1,3 +1,6 @@
+CREATE DATABASE sql_exercises_6;
+USE sql_exercises_6;
+
 create table Scientists (
   SSN int,
   Name Char(30) not null,

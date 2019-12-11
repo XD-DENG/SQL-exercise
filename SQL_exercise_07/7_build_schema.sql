@@ -1,5 +1,8 @@
 -- https://en.wikibooks.org/wiki/SQL_Exercises/Planet_Express
 
+CREATE DATABASE sql_exercises_7;
+USE sql_exercises_7;
+
 CREATE TABLE Employee (
   EmployeeID INTEGER PRIMARY KEY,
   Name VARCHAR(255) NOT NULL,

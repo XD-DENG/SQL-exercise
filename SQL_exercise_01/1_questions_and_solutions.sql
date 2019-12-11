@@ -82,7 +82,7 @@ SELECT name,price
   ORDER BY price ASC
   LIMIT 1;
   
---SQL SERVER SOLUTION (T-SQL)
+-- SQL SERVER SOLUTION (T-SQL)
 SELECT TOP 1 name
             ,price
 FROM Products

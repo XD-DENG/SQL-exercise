@@ -1,4 +1,6 @@
 -- LINK: https://en.wikibooks.org/wiki/SQL_Exercises/The_computer_store
+CREATE DATABASE sql_exercises_1;
+USE sql_exercises_2;
 
 CREATE TABLE Manufacturers (
   Code INTEGER,
