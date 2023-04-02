@@ -1,5 +1,8 @@
 -- https://en.wikibooks.org/wiki/SQL_Exercises/The_Hospital
 
+
+/* -- Dropping database tables if exit before creation */
+
 DROP TABLE IF EXISTS Physician;
 CREATE TABLE Physician (
   EmployeeID INTEGER NOT NULL,
@@ -160,6 +163,8 @@ CREATE TABLE Undergoes (
   CONSTRAINT fk_Undergoes_Physician_EmployeeID FOREIGN KEY(Physician) REFERENCES Physician(EmployeeID),
   CONSTRAINT fk_Undergoes_Nurse_EmployeeID FOREIGN KEY(AssistingNurse) REFERENCES Nurse(EmployeeID)
 );
+
+/* -- Inserting data into respective database tables */ 
 
 
 INSERT INTO Physician VALUES(1,'John Dorian','Staff Internist',111111111);
